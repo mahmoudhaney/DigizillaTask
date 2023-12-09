@@ -15,8 +15,6 @@
                 <field name="tags" />
                 <field name="customers" />
                 <field name="company" />
-                <field name="notes" />
-                <field name="comments" />
             </tree>
         </field>
     </record>
@@ -38,15 +36,17 @@
                             <field name="joining_date" />
                             <field name="tags" />
                             <field name="company" />
-                            <field name="notes" />
-                            <field name="comments" />
                         </group>
                     </group>
                     <notebook>
                         <page string="User Customers">
-                            <tree editable="bottom">
                                 <field name="customers" />
-                            </tree>
+                        </page>
+                        <page string="Notes">
+                            <field name="notes" widget="text" options="{'readonly': True}" />
+                        </page>
+                        <page string="Comments">
+                            <field name="comments" widget="text" options="{'readonly': True}" />
                         </page>
                     </notebook>
                 </sheet>
