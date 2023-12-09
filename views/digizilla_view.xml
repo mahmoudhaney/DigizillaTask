@@ -50,6 +50,10 @@
                         </page>
                     </notebook>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" />
+                    <field name="message_ids" />
+                </div>
             </form>
         </field>
     </record>
@@ -98,5 +102,3 @@
     <menuitem id="digizilla_sub_menu" parent="digizilla_root_menu" name="Digizilla Users"/>
     <menuitem id="digizilla_user_menu" action="action_digizilla_user" parent="digizilla_sub_menu"/>
 </odoo> 
-
-

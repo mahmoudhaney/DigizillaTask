@@ -7,7 +7,7 @@
     'description':"This is an assignment for Python Developer role at Digizilla Company",
     'category':'Customization',
     'website':'https://github.com/mahmoudhaney',
-    'depends':['base'],
+    'depends':['base', 'mail'],
     'data': [
         "security\ir.model.access.csv",
         "views\digizilla_view.xml"
