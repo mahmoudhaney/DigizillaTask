@@ -5,7 +5,7 @@
         <field name="name">digizilla.list.view</field>
         <field name="model">digizilla.user</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree create="false" edit="false">
                 <field name="name" />
                 <field name="email" />
                 <field name="phone" />
@@ -16,6 +16,7 @@
                 <field name="customers" />
                 <field name="company" />
             </tree>
+            <script type="text/javascript" src="/digizilla/static/src/js/digizilla_hide_create_button.js"></script>
         </field>
     </record>
 
@@ -24,7 +25,7 @@
         <field name="name">digizilla.form.view</field>
         <field name="model">digizilla.user</field>
         <field name="arch" type="xml">
-            <form string="Digizilla User">
+            <form string="Digizilla User"  create="false" edit="false">
                 <sheet>
                     <group>
                         <group>
@@ -54,6 +55,7 @@
                     <field name="message_follower_ids" />
                     <field name="message_ids" />
                 </div>
+                <script type="text/javascript" src="/digizilla/static/src/js/digizilla_hide_create_button.js"></script>
             </form>
         </field>
     </record>
@@ -63,7 +65,7 @@
         <field name="name">digizilla.view.kanban</field>
         <field name="model">digizilla.user</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban  create="false" edit="false">
                 <field name="name" />
                 <field name="email" widget="email" />
                 <field name="joining_date" />
@@ -86,6 +88,7 @@
                         </div>
                     </t>
                 </templates>
+                <script type="text/javascript" src="/digizilla/static/src/js/digizilla_hide_create_button.js"></script>
             </kanban>
         </field>
     </record>

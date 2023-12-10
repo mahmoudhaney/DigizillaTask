@@ -13,5 +13,11 @@
         "views\digizilla_view.xml",
         'report\pdf_tempelate.xml',
         'report\digizilla_report.xml',
-    ]
+    ],
+    'qweb': [
+        'views\digizilla_view.xml', 
+    ],
+    'js': [
+        'static/src/js/digizilla_hide_create_button.js',
+    ],
 }
