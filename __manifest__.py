@@ -10,6 +10,8 @@
     'depends':['base', 'mail'],
     'data': [
         "security\ir.model.access.csv",
-        "views\digizilla_view.xml"
+        "views\digizilla_view.xml",
+        'report\pdf_tempelate.xml',
+        'report\digizilla_report.xml',
     ]
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_user">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div class="user-info">
+                    <h1>User Information</h1>
+                    <dl>
+                        <dt><strong>Name:</strong></dt>
+                        <dd t-esc="doc.name" />
+
+                        <dt><strong>Email:</strong></dt>
+                        <dd t-esc="doc.email" />
+
+                        <dt><strong>Phone:</strong></dt>
+                        <dd t-esc="doc.phone" />
+
+                        <dt><strong>Gender:</strong></dt>
+                        <dd t-esc="doc.gender" />
+
+                        <dt><strong>Country:</strong></dt>
+                        <dd t-esc="doc.country" />
+
+                        <dt><strong>Joining Date:</strong></dt>
+                        <dd t-esc="doc.joining_date" />
+
+                        <dt><strong>Tags:</strong></dt>
+                        <dd t-esc="doc.tags" />
+
+                        <dt><strong>Customers:</strong></dt>
+                        <dd t-esc="doc.customers" />
+
+                        <dt><strong>Company:</strong></dt>
+                        <dd t-esc="doc.company" />
+                    </dl>
+                </div>
+
+                <div class="user-notes">
+                    <h2>Notes</h2>
+                    <p t-esc="doc.notes" />
+                </div>
+
+                <div class="user-comments">
+                    <h2>Comments</h2>
+                    <p t-esc="doc.comments" />
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

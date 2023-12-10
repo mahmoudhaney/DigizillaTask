@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <report 
+        id="report_digizilla_user"
+        string="User Report"
+        model="digizilla.user"
+        report_type="qweb-pdf"
+        name="digizilla.report_user"
+        file="digizilla.report_user" 
+    />
+</odoo>

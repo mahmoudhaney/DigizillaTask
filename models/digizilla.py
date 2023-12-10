@@ -16,4 +16,3 @@ class DigizillaUser(models.Model):
     company = fields.Many2one('res.company', string='Company', required=True, tracking=True)
     notes = fields.Text(tracking=True)
     comments = fields.Char(tracking=True)
-
